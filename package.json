@@ -24,7 +24,7 @@
     ]
   },
   "scripts": {
-    "build": "NODE_ENV=production webpack",
+    "build": "SET NODE_ENV=production&& webpack",
     "test": "NODE_ENV=test webpack && mocha dist/tests.js",
     "analyze": "NODE_ENV=production webpack --env.analyze",
     "start:dev": "NODE_ENV=development webpack --watch",
